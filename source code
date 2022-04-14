@@ -1,0 +1,462 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Books Lover | Ebookstore</title>
+    <link rel="stylesheet" href="style.css"/>
+    
+  </head>
+
+  <body>
+    <!------------------ Header ------------------>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html">
+              <img src = "https://i.pinimg.com/originals/3c/7a/f3/3c7af3c03a1fc34f679d6cb8d1af703a.png" height = "200" 
+              width = "250" />
+   </a>
+          </div>
+          <!----------  Nav Bar ------------------>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="ebooks.html">Ebooks</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          </nav>
+         
+          <a href="cart.html">
+            <img
+              src="images/cart.png"
+              alt="Shoping Cart"
+              width="28px"
+              height="28px"
+              style="margin-left: 10px; margin-top: 15px"
+             
+            />
+          </a>
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <h1>
+              The Books Lover<br />
+              Read all About it!
+            </h1>
+            <p>
+              Click on explore and see available books which are match to your stuff.<br />
+            </p>
+            <a href="ebooks.html" class="btn">Explore Now &#x27F6;</a>
+          </div>
+          <div class="col-2">
+            <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX41249191.jpg" alt="Header Pic" height = "500" width = "300" align = "right"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+   
+      <form action="../src/signin.html" method="post">
+    <link rel="stylesheet" href="">
+        <label for="fname">username</label>
+        <input type="text" id="fname" name="username" required placeholder="Your name..">
+    
+        <label>password :
+      <input name="password" id="password" type="password" 
+          required
+          onkeyup='check();' />
+    </label>
+    <br>
+    <label>confirm password:
+      <input type="password" name="confirm_password" id="confirm_password" required onkeyup='check();' /> 
+      <span id='message'></span>
+    </label>
+       <script type="text/javascript">
+       var number=0;
+       var check = function() {
+          
+         if (document.getElementById('password').value ==
+           document.getElementById('confirm_password').value) {
+           document.getElementById('message').style.color = 'green';
+           document.getElementById('message').innerHTML = 'matching';
+          number=1;
+         } else {
+           document.getElementById('message').style.color = 'red';
+           document.getElementById('message').innerHTML = 'not matching';
+         }
+        
+       }
+       </script>
+        <button onclick="myFunction()">Register</button>
+     
+       <script>
+      
+       function myFunction() {
+         
+         confirm("you are registered");
+        
+          }
+       
+       
+    
+       </script>
+        
+      </form>
+    </div>
+    <!----------------featured categories -------------------->
+    <div class="categories">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71kBRLo8ZtL.jpg" alt="Book 1" height = "425" />
+          </div>
+          <div class="col-3">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/61Otmq-c4vL.jpg" alt="Book 2" height = "425"/>
+          </div>
+          <div class="col-3">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/816J67jnBCL.jpg" alt="Book 3" height = "425" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------featured Books -------------------->
+    <div class="small-container">
+      <h2 class="title">Featured Titles</h2>
+      <div class="row">
+        <div class="col-4">
+          <a href="book-detail.html">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71Gb4U0pSML.jpg" alt="Book 4"
+          height = "350"/></a>
+          <a href="book-detail.html"> <h4>C Programming Language</h4></a>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs.300</p>
+        </div>
+        <div class="col-4">
+          <a href = "Bookdetail2.html">
+          <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546227910l/43413242._SY475_.jpg" alt="Book 5" height = "350" /></a>
+          <h4>Python Programming Language</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs.300</p>
+        </div>
+        <div class="col-4">
+          <a href = "Bookdetail3.html">
+          <img src="https://m.media-amazon.com/images/I/51dAK6qL2gL.jpg" alt="Book 6" height  = "350" /></a>
+          <h4>SQL Language</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>Rs.400</p>
+        </div>
+        <div class="col-4">
+          <a href = "Bookdetail4.html">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/71xOzbTRXVL.jpg" alt="Book 7" height = "350"/></a>
+          <h4>Web Technology</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs.500</p>
+        </div>
+      </div>
+      <h2 class="title">Best sellers Novel</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="https://kbimages1-a.akamaihd.net/ec8f8bad-d56a-4225-8062-8a6af9eb1194/1200/1200/False/harry-potter-and-the-chamber-of-secrets-9.jpg" alt="Book 8" height  = "350"/>
+          <h4>Harry Porter</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Rs.500</p>
+        </div>
+        <div class="col-4">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/51Ex6Plv-kL._SX333_BO1,204,203,200_.jpg" alt="Book 9" height = "350s" />
+          <h4>The Book Of God</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs.500</p>
+        </div>
+        <div class="col-4">
+          <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1393067200l/20884937._SY475_.jpg" alt="Book 10" height = "350" />
+          <h4>All The Night We Cannot See</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>Rs.500</p>
+        </div>
+        <div class="col-4">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt="Book 11" height = "350" />
+          <h4>The Alchemist</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs.500</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/61fMgBkM3jS.jpg" alt="Book 12" height = "350"/>
+          <h4>Meluha</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs.500</p>
+        </div>
+        <div class="col-4">
+          <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1464268634l/30295016._SY475_.jpg" alt="Book 13" height = "350" />
+          <h4>The Art Of Success</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs.500</p>
+        </div>
+        <div class="col-4">
+          <img src="https://cdn.lifehack.org/wp-content/uploads/2014/05/the-monk-and-the-riddle.jpg" alt="Book 14" height = "350" />
+          <h4>The Monk And The Riddle</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>Rs.500</p>
+        </div>
+        <div class="col-4">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/A1F38uus5iL._RI_.jpg" alt="Book 15" height = "350" />
+          <h4>The Hobbit</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rs.500</p>
+        </div>
+      </div>
+    </div>
+    <!------------------offer ------------>
+    <div class="offer">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-2">
+            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1471281193l/30212107.jpg" class="offer-img" />
+          </div>
+          <div class="col-2">
+            <p>Available on EbookStore</p>
+            <br />
+            <h2>Days without end</h2>
+            <br />
+            <small>
+              An intensely poignant story of two men and the makeshift family they create with a young Sioux girl, Winona, 
+              Days Without End is a fresh and haunting portrait of the most fateful years in American history and is a novel never to be forgotten.  </small>
+            <a href="#" class="btn">Buy Now &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------testimonial-------------------->
+    <div class="testimonial">
+      <div class="small-container">
+        <div div class="row">
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              The Book store website is really good. This website has numerous type of book.
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <img src="https://i.pinimg.com/originals/54/a9/23/54a9230f10e11bd934dbf455463d1c87.jpg" alt="zeeshansaeed" />
+            <h3>Akshat Gupta</h3>
+          </div>
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              All the edition of book are latest. The mehula book of lord shiva i really like it.
+            </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <img src="https://images.unsplash.com/photo-1615022702095-ff2c036f3360?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW5kaWFuJTIwZ2lybHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="zeeshansaeed" />
+            <h3>Vanshika Verma</h3>
+          </div>
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              All the book have cheapest prize.Hope bookstore provide us more book with lowest prize </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <img src="https://images.unsplash.com/photo-1623091411395-09e79fdbfcf3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWFuJTIwZ2lybHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="zeeshansaeed" />
+            <h3>Mahika shetty</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------publishers------------------- -->
+    <div class="publishers">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-5">
+            <img src="images/publisher1.jpg" />
+          </div>
+          <div class="col-5">
+            <img src="images/publisher2.png" />
+          </div>
+          <div class="col-5">
+            <img src="images/publisher3.jpeg" />
+          </div>
+          <div class="col-5">
+            <img src="images/publisher4.jpg" />
+          </div>
+          <div class="col-5">
+            <img src="images/publisher5.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+ <!-- ---------------------footer------------------- -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="app-logo">
+              <a href="https://play.google.com/store?hl=en_IN&gl=US"><img src="images/Playstore.png"/></a>
+              <a href = "https://www.apple.com/in/shop"><img src="images/Applestore.png"/></a>
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <a href="index.html">
+            <img src = "https://i.pinimg.com/originals/3c/7a/f3/3c7af3c03a1fc34f679d6cb8d1af703a.png" height = "100" width = "500" /></a>
+            <p>
+              The best retail price book available in ebookstore.</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li><a href = "https://en-gb.facebook.com/">Facebook</a></li>
+              <li><a href = "https://www.youtube.com/">Youtube</a></li>
+              <li><a href = "https://www.instagram.com/">Instagram</li>
+              <li><a href = "https://twitter.com/?lang=en">Twitterr</li>
+            </ul>
+            
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2020 - EbookStore</p>
+      </div>
+    </div>
+    <!-- ---------Javascript for toggle menu------------- -->
+    <script>
+ 
+      function checkinfo() {
+          console.log("welcome");
+          var flag =0;
+          var username_input = document.getElementById("user").value;
+          var  password_input= document.getElementById("entered_password").value;
+          var U_name = ["Abhishek", "Abhishek Kumar", "Aniket", "Amit", "rohit"];
+          var U_pass = ["Abhishek@12", "AbhishekKumar@12", "Aniket@12", "Amit@12", "rohit@12"];
+          var arrayLength = U_name.length;
+          for (var i = 0; i <= arrayLength; i++) {
+              if (username_input == U_name[i] && password_input == U_pass[i]) {
+                  
+                  flag=1;                 
+                }               
+             
+          }    if(flag==1)
+          {document.location.href = "cart.html";
+    
+          }    
+          else{
+              alert("wrong id or password");
+          } 
+    
+      }  </script>
+    </head>
+    <body>
+      <label for="uname"><b>Username</b></label>
+        <input type="text" id="user" placeholder="Enter Username" name="uname" >
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" id="entered_password" placeholder="Enter Password" name="psw" >
+      <input type="button" value="Login" onclick="checkinfo()">
+  </body>
+</html>
+
+
+
+
